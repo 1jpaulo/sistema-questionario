@@ -1,18 +1,22 @@
 <div class="list">
     <div class="sub-list unanswered">
-        <div class="list-item">teste 1</div>
-        <div class="list-item">teste 2</div>
-        <div class="list-item">teste 3</div>
-        <div class="list-item">teste 4</div>
+        <a href="#" class="list-item">Teste 1</a>
+        <a href="#" class="list-item">Teste 1</a>
+        <a href="#" class="list-item">Teste 1</a>
+        <a href="#" class="list-item">Teste 1</a>
+        <a href="#" class="list-item">Teste 1</a>
+        <a href="#" class="list-item">Teste 1</a>
+        <a href="#" class="list-item">Teste 1</a>
+        <a href="#" class="list-item">Teste 1</a>
     </div>
     <div class="sub-list answered">
-        <div class="list-item">teste 1</div>
-        <div class="list-item">teste 2</div>
-        <div class="list-item">teste 3</div>
-        <div class="list-item">teste 4</div>
-        <div class="list-item">teste 1</div>
-        <div class="list-item">teste 2</div>
-        <div class="list-item">teste 3</div>
-        <div class="list-item">teste 4</div>
+        <a href="#" class="list-item">Teste 2</a>
+        <a href="#" class="list-item">Teste 2</a>
+        <a href="#" class="list-item">Teste 2</a>
+        <a href="#" class="list-item">Teste 2</a>
+        <a href="#" class="list-item">Teste 2</a>
+        <a href="#" class="list-item">Teste 2</a>
+        <a href="#" class="list-item">Teste 2</a>
+        <a href="#" class="list-item">Teste 2</a>
     </div>
 </div>

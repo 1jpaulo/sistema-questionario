@@ -21,8 +21,24 @@
 .list-item {
     border-width: 0.1rem .7rem 0 0;
     flex: 1;
+    display: block;
     max-height: 80px;
     min-height: 50px;
+}
+
+/* makes list items clickable */
+.list-item{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.answered .list-item:active {
+    background-color: rgb(31, 158, 31) !important;
+}
+
+.unanswered .list-item:active {
+    background-color: rgb(163, 163, 163) !important;
 }
 
 .unanswered .list-item {
