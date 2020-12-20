@@ -1,22 +1,9 @@
-<div class="list">
-    <div class="sub-list unanswered">
-        <a href="#" class="list-item">Teste 1</a>
-        <a href="#" class="list-item">Teste 1</a>
-        <a href="#" class="list-item">Teste 1</a>
-        <a href="#" class="list-item">Teste 1</a>
-        <a href="#" class="list-item">Teste 1</a>
-        <a href="#" class="list-item">Teste 1</a>
-        <a href="#" class="list-item">Teste 1</a>
-        <a href="#" class="list-item">Teste 1</a>
-    </div>
-    <div class="sub-list answered">
-        <a href="#" class="list-item">Teste 2</a>
-        <a href="#" class="list-item">Teste 2</a>
-        <a href="#" class="list-item">Teste 2</a>
-        <a href="#" class="list-item">Teste 2</a>
-        <a href="#" class="list-item">Teste 2</a>
-        <a href="#" class="list-item">Teste 2</a>
-        <a href="#" class="list-item">Teste 2</a>
-        <a href="#" class="list-item">Teste 2</a>
-    </div>
+<div class="body">
+    <h2>Questionários</h2> <!-- TODO put some foreach here to iterate over json keys -->
+    @foreach ($info as $key => $value)
+        <a href="{{url()->current() . '/' . $key}}" class="question selectable">
+            <div class="title">Questionário {{$value["title"]}}</div>
+            <div class="description">{{$value["description"]}}</div>
+        </a>
+    @endforeach
 </div>

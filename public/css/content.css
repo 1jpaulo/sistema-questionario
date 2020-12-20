@@ -1,59 +1,53 @@
 .content {
     display: flex;
     flex: 1;
-    background-color: coral;
-}
-
-.list {
-    flex: 1;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.sub-list {
-    flex: 1 1 0;
-    display: flex;
-    flex-direction: column;
-    overflow-y: scroll;
-}
-
-.list-item {
-    border-width: 0.1rem .7rem 0 0;
-    flex: 1;
-    display: block;
-    max-height: 80px;
-    min-height: 50px;
-}
-
-/* makes list items clickable */
-.list-item{
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-}
-
-.answered .list-item:active {
-    background-color: rgb(31, 158, 31) !important;
-}
-
-.unanswered .list-item:active {
-    background-color: rgb(163, 163, 163) !important;
-}
-
-.unanswered .list-item {
-    border-color: rgb(163, 163, 163);
-    border-style: solid;
-    background-color: rgb(182, 182, 182);
-}
-
-.answered .list-item {
-    border-color: rgb(31, 158, 31);
-    border-style: solid;
-    background-color: rgb(85, 197, 85);
+    margin: 5% 0 0 0; /* TODO change value with media query for smaller devices */
 }
 
 .body {
     flex: 4;
-    background-color: darkgoldenrod;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.body h2 {
+    color: #8221a5;
+}
+
+.body .question {
+    margin: 2rem 0;
+    width: 60%; /* TODO increase for smaller devices */
+    min-height: 50px;
+    border: 1px solid #470061;
+    box-sizing: border-box;
+    padding: 0 2rem;
+}
+
+/* applies a given margin to each child of question */
+.question > * {
+    display: block;
+    margin: 2rem 0;
+}
+
+.question .title {
+    background-color: #8221a5;
+    
+    width: 20%;
+    min-width: 100px;
+    padding: .5rem;
+
+    color: white;
+    font-weight: bold;
+}
+.question .description {
+}
+
+.question .answer {
+    
+}
+
+.body .answer {
+    width: 50%;
 }

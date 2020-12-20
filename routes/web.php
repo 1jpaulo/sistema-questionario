@@ -14,4 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 use App\Http\Controllers\PagesController;
 
-Route::get('/', [PagesController::class, 'welcome']);
+Route::redirect('/', '/questionarios');
+Route::get('/questionarios',  [PagesController::class, 'surveyList']);
+Route::get('/questionarios/{id}', [PagesController::class, 'specificSurvey']);
