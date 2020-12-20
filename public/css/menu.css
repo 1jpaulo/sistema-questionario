@@ -1,6 +1,5 @@
 /* a wrapper for logo and the actual menu box */
-#menu {
-    width: 100%;
+.menu {
     height: 10%;
 
     display: flex;
@@ -12,7 +11,7 @@
 
 }
 
-#menu .menu-box {
+.menu .menu-box {
     display: flex;
     flex: 9;
     /*background-color: turquoise;*/
@@ -22,7 +21,7 @@
     margin: 0 0.5rem;
 }
 
-#menu .logo{ 
+.menu .logo{ 
     display: flex;
     flex: 2;
     font-size: 3rem;

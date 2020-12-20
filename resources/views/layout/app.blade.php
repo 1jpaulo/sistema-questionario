@@ -10,6 +10,7 @@
         <link href="{{URL::asset('css/app.css')}}" rel="stylesheet">
 
         <link href="{{URL::asset('css/menu.css')}}" rel="stylesheet">
+        <link href="{{URL::asset('css/content.css')}}" rel="stylesheet">
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -23,6 +24,6 @@
     </head>
     <body>
         @yield('menu')
-        @yield('body')
+        @yield('content')
     </body>
 </html>
