@@ -22,6 +22,11 @@
     margin: 0 0.5rem;
 }
 
+.menu-item .bold {
+    font-weight: bold;
+    color: black;
+}
+
 .menu .logo{ 
     display: flex;
     flex: 2;

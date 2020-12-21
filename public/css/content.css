@@ -51,3 +51,7 @@
 .body .answer {
     width: 50%;
 }
+
+.body input[type="button"] {
+    margin: 0.2rem;
+}

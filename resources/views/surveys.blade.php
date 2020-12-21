@@ -6,8 +6,10 @@
     <div class="content">
         @if (isset($info))
             @include('list')
-        @else
+        @elseif (isset($question))
             @include('specificSurvey')
+        @else
+            @include('surveyCreation')
         @endif
     </div>
 @endsection
