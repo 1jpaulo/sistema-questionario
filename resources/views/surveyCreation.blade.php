@@ -45,6 +45,7 @@
         Resposta
         <input class="answer" type="text">
     </div>
+    <!-- TODO add style to buttons and set registrar questionário -->
     <input type="button" name="Adiciona" value="Adicionar questão" onclick="insertQuestion()">
     <input type="button" name="Registra" value="Registrar questionário" onclick="void(0)">
 </div>

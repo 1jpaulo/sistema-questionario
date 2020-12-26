@@ -1,12 +1,12 @@
 /* a wrapper for logo and the actual menu box */
 .menu {
     position: fixed;
-    width: 100%;
-    height: 10%; /* TODO refactor for both pc and smaller devices */
+    width: 100%; 
+    /* TODO refactor height for both pc and smaller devices */
 
     display: flex;
 
-    background: #470061;
+    background-color: #470061;
     color: white;
     font-size: 1.2rem;
     align-items: center;
@@ -15,19 +15,37 @@
 
 .menu .menu-box {
     display: flex;
+    align-items: baseline;
     flex: 9;
 }
 
-.menu-box .menu-item {
+.menu a {
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: white;
+    color: #470061;
+    transition: background-color .8s ease-in-out;
+}
+
+.menu-box .menu-item 
+{
+    color: white;
     margin: 0 0.5rem;
+    height: 2.5rem;
+    padding: 0 0.5rem;
+    display: flex;
+    align-items: center;
 }
 
-.menu-item .bold {
-    font-weight: bold;
-    color: black;
+.bold {
+    color: #470061 !important; /* overwrite default white because of white background-color */
+    font-weight: bolder; 
+    background-color: white;
 }
 
-.menu .logo{ 
+.menu .logo { 
     display: flex;
     flex: 2;
     font-size: 3rem;

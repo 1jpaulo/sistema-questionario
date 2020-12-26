@@ -17,8 +17,8 @@ use App\Http\Controllers\PagesController;
 Route::redirect('/', '/questionarios');
 
 # handling answers pages
-Route::get('/questionarios',  [PagesController::class, 'surveyList']);
+Route::get('/questionarios',  [PagesController::class, 'surveyList'])->name('questionarios');
 Route::get('/questionarios/{id}', [PagesController::class, 'specificSurvey']);
 
 # handling survey creation pages
-Route::get('/criacao/questionario', [PagesController::class, 'surveyCreation']);
+Route::get('/criacao/questionario', [PagesController::class, 'surveyCreation'])->name('criacao');
