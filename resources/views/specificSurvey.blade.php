@@ -1,5 +1,5 @@
 <div class="body">
-    <!-- TODO some json value for title, description and answer -->
+    
     <h2>Questionário {{$question['title']}}</h2>
 
     @foreach ($question["questions"] as $key => $value)

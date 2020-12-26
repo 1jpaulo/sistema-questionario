@@ -1,7 +1,6 @@
 /* a wrapper for logo and the actual menu box */
 .menu {
     width: 100%; 
-    /* TODO refactor height for both pc and smaller devices */
 
     display: flex;
 

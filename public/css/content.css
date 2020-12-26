@@ -42,7 +42,6 @@
     
     width: max-content;
     word-wrap: break-word;
-    min-width: 100px;
     padding: .5rem;
 
     color: white;
@@ -55,4 +54,14 @@
 
 .body input[type="button"] {
     margin: 0.2rem;
+    border: 1px solid #470061;
+    color: #470061;
+    background-color: transparent;
+    padding: .5rem;
+}
+
+.body input[type="button"]:hover {
+    background-color: #470061;
+    color: white;
+    transition: background-color .8s ease-in-out, color .8s ease-in-out;;
 }

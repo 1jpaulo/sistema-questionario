@@ -1,4 +1,5 @@
 <script>
+    // TODO put script in split js file
     function createQuestion()
     {
         var questionDiv = document.createElement('DIV');
@@ -34,9 +35,19 @@
         var body = document.getElementsByClassName("body")[0];
         body.insertBefore(question, document.getElementsByName("Adiciona")[0]);
     }
+
+    fuction retrieveQuestions()
+    {
+
+    }
+    function registerSurvey()
+    {
+        
+    }
+
 </script>
 <div class="body">
-    <!-- TODO some json value for title, description and answer -->
+    
     <h2>Criação de Questionário</h2>
     <div class="question">
         <div class="title">Questão 1</div>
@@ -45,7 +56,7 @@
         Resposta
         <input class="answer" type="text">
     </div>
-    <!-- TODO add style to buttons and set registrar questionário -->
+    <!-- set registrar questionário onclick action -->
     <input type="button" name="Adiciona" value="Adicionar questão" onclick="insertQuestion()">
-    <input type="button" name="Registra" value="Registrar questionário" onclick="void(0)">
+    <input type="button" name="Registra" value="Registrar questionário" onclick="registerSurvey()">
 </div>
