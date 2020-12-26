@@ -1,5 +1,3 @@
-@extends('layout.app')
-
 @section('menu')
 <div class="menu">
     <div class="logo">Q&A</div>

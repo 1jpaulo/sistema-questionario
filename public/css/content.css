@@ -27,7 +27,7 @@
 }
 
 .body a:hover {
-    border-right: 2rem solid #470061; /* TODO set animation-duration */
+    border-right: 2rem solid #470061;
     transition: border-right-width .4s ease-in-out;
 }
 

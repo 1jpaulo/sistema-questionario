@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Title here</title> <!-- TODO get title from JSON maybe with @yield('title') -->
+        <title>{{$title . ' ' . (isset($question) ? $question['title'] : '')}}</title>
 
         <!-- Css Resets -->
         <link href="{{URL::asset('css/app.css')}}" rel="stylesheet">

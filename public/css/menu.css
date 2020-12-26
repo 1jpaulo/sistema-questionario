@@ -1,6 +1,5 @@
 /* a wrapper for logo and the actual menu box */
 .menu {
-    position: fixed;
     width: 100%; 
     /* TODO refactor height for both pc and smaller devices */
 

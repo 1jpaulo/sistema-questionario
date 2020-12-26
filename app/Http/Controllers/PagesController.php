@@ -12,6 +12,7 @@ class PagesController extends Controller
         $info = file_get_contents(base_path(Storage::url('app/questions.json')));
         $info = json_decode($info, true);
         return view('surveys')
+            ->with('title', 'Questionário')
             ->with('answer', 'true')
             ->with('info', $info);
     }
@@ -21,6 +22,7 @@ class PagesController extends Controller
         $info = file_get_contents(base_path(Storage::url('app/questions.json')));
         $info = json_decode($info, true);
         return view('surveys')
+            ->with('title', 'Questionário')
             ->with('answer', 'true')
             ->with('question', $info[$id]);
     }
@@ -28,6 +30,7 @@ class PagesController extends Controller
     public function surveyCreation()
     {
         return view('surveys')
+            ->with('title', 'Criar questionário')
             ->with('creation', 'true');
     }
 }
